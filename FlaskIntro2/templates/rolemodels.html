@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C4E6 - Flask, HTML, Jinja intro</title>
+</head>
+<body>
+
+{% for person in person_list %}
+    <h1>Today is a beautiful day</h1>
+    <h2>I met a guy</h2>
+    <h3>... and his name is {{ person.name }}</h3>
+    <img src="{{ person.img }}">
+{% endfor %}
+
+</body>
+</html>
